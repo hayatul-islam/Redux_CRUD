@@ -19,7 +19,8 @@ export default function Form() {
   const { isLoading, isError, error } = useSelector(
     (state) => state.transactions
   );
-  const editing = useSelector((state) => state.transactions.editing);
+  const { editing } = useSelector((state) => state.transactions);
+  console.log(editing);
 
   const reset = () => {
     setName("");
@@ -50,7 +51,7 @@ export default function Form() {
         amount: Number(amount),
       })
     );
-    reset();
+    // reset();
   };
 
   const handleUpdate = (e) => {
@@ -78,7 +79,7 @@ export default function Form() {
     <div className="form">
       <h3>Add new transaction</h3>
 
-      <form onSubmit={editing ? handleUpdate : handleCreate}>
+      <form onSubmit={editMode ? handleUpdate : handleCreate}>
         <div className="form-group">
           <label>Name</label>
           <input

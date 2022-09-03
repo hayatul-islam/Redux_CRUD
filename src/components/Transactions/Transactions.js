@@ -5,7 +5,7 @@ export default function Transactions() {
   const { transactions, isLoading, isError, error } = useSelector(
     (state) => state.transactions
   );
-  console.log(transactions);
+  //   console.log(transactions);
 
   // decite what to render
   let content = null;

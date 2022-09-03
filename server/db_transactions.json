@@ -13,9 +13,9 @@
       "amount": 200000
     },
     {
-      "name": "MD. HAYATUL ISLAM",
+      "name": "eee",
+      "amount": "67878",
       "type": "income",
-      "amount": "66666",
       "id": 3
     },
     {
@@ -31,9 +31,9 @@
       "id": 5
     },
     {
-      "name": "fff",
+      "name": "wwww",
+      "amount": "4445",
       "type": "income",
-      "amount": 444,
       "id": 6
     },
     {
@@ -71,6 +71,12 @@
       "type": "expense",
       "amount": 1000000,
       "id": 12
+    },
+    {
+      "name": "testt",
+      "type": "income",
+      "amount": 4444,
+      "id": 13
     }
   ]
 }

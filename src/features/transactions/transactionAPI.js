@@ -13,7 +13,7 @@ export const addTransaction = async (data) => {
 };
 
 export const editTransaction = async (id, data) => {
-  const response = await axios.put(`/transactions${id}`, data);
+  const response = await axios.put(`/transactions/${id}`, data);
 
   return response.data;
 };

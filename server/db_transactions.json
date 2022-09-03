@@ -13,70 +13,10 @@
       "amount": 200000
     },
     {
-      "name": "eee",
-      "amount": "67878",
-      "type": "income",
-      "id": 3
-    },
-    {
-      "name": "Hayatul Emon",
-      "type": "expense",
-      "amount": "4444",
-      "id": 4
-    },
-    {
-      "name": "Hayatul Emon",
-      "type": "expense",
-      "amount": "4444",
-      "id": 5
-    },
-    {
-      "name": "wwww",
-      "amount": "4445",
-      "type": "income",
-      "id": 6
-    },
-    {
-      "name": "Hayatul Emon",
-      "type": "income",
-      "amount": 555,
-      "id": 7
-    },
-    {
-      "name": "Hayatul Emon",
-      "type": "income",
-      "amount": 555,
-      "id": 8
-    },
-    {
-      "name": "Hayatul Emon",
-      "type": "income",
-      "amount": 555,
-      "id": 9
-    },
-    {
       "name": "google",
       "type": "income",
       "amount": 1000000,
       "id": 10
-    },
-    {
-      "name": "google",
-      "type": "income",
-      "amount": 1000000,
-      "id": 11
-    },
-    {
-      "name": "google",
-      "type": "expense",
-      "amount": 1000000,
-      "id": 12
-    },
-    {
-      "name": "testt",
-      "type": "income",
-      "amount": 4444,
-      "id": 13
     }
   ]
 }

@@ -53,6 +53,24 @@
       "type": "income",
       "amount": 555,
       "id": 9
+    },
+    {
+      "name": "google",
+      "type": "income",
+      "amount": 1000000,
+      "id": 10
+    },
+    {
+      "name": "google",
+      "type": "income",
+      "amount": 1000000,
+      "id": 11
+    },
+    {
+      "name": "google",
+      "type": "expense",
+      "amount": 1000000,
+      "id": 12
     }
   ]
 }

@@ -78,7 +78,7 @@ const transactionsSlice = createSlice({
       })
       .addCase(createTransaction.rejected, (state, action) => {
         state.isError = true;
-        state.isLoading = false;
+        state.isLoading = true;
         state.error = action.error.message;
       })
 

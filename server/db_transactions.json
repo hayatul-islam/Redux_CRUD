@@ -1,34 +1,16 @@
 {
   "transactions": [
     {
+      "name": "Hayatul Emon",
+      "type": "income",
+      "amount": 5555,
+      "id": 1
+    },
+    {
       "name": "fff",
-      "type": "income",
-      "amount": 5000,
-      "id": 4
-    },
-    {
-      "name": "Hayatul Emon",
       "type": "expense",
-      "amount": 400,
-      "id": 5
-    },
-    {
-      "name": "Hayatul Emon",
-      "type": "income",
-      "amount": 500,
-      "id": 6
-    },
-    {
-      "name": "Hayatul Emon",
-      "type": "income",
-      "amount": 500,
-      "id": 7
-    },
-    {
-      "name": "Hayatul Emon",
-      "type": "expense",
-      "amount": 500,
-      "id": 8
+      "amount": 200,
+      "id": 2
     }
   ]
 }

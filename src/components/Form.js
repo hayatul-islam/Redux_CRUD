@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   changeTransaction,
   createTransaction,
-  fetchTransactions,
 } from "../features/transactions/transactionsSlice";
 
 export default function Form() {
@@ -13,14 +12,13 @@ export default function Form() {
   const [editMode, setEditMode] = useState(false);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchTransactions());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(fetchTransactions());
+  // }, [dispatch]);
   const { isLoading, isError, error } = useSelector(
     (state) => state.transactions
   );
   const { editing } = useSelector((state) => state.transactions);
-  console.log(editing);
 
   const reset = () => {
     setName("");
@@ -51,7 +49,7 @@ export default function Form() {
         amount: Number(amount),
       })
     );
-    // reset();
+    reset();
   };
 
   const handleUpdate = (e) => {

@@ -2,7 +2,6 @@ import { useSelector } from "react-redux";
 
 export default function Balance() {
   const { transactions } = useSelector((state) => state.transactions);
-  console.log(transactions);
 
   const calculateIncome = (transactions) => {
     let income = 0;

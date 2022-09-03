@@ -90,6 +90,12 @@ input {
 .btn:hover {
     background-color: #094d3d;
 }
+.view_all_btn{
+    background-color: #094d3d;
+    color: white; 
+    width: auto;
+    border-radius: 10px;
+}
 
 ul {
     list-style: none;

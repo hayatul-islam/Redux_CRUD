@@ -18,6 +18,7 @@ export const fetchTransactions = createAsyncThunk(
   "transactions/fetchTransactions",
   async () => {
     const transactions = await getTransactions();
+
     return transactions;
   }
 );
@@ -67,7 +68,10 @@ const transactionsSlice = createSlice({
       .addCase(fetchTransactions.fulfilled, (state, action) => {
         state.isError = false;
         state.isLoading = false;
-        state.transactions = action.payload;
+
+        state.transactions = action.payload.sort(function (a, b) {
+          return b.id - a.id;
+        });
       })
       .addCase(fetchTransactions.rejected, (state, action) => {
         state.isError = true;
@@ -83,7 +87,7 @@ const transactionsSlice = createSlice({
       .addCase(createTransaction.fulfilled, (state, action) => {
         state.isError = false;
         state.isLoading = false;
-        state.transactions.push(action.payload);
+        state.transactions.unshift(action.payload);
       })
       .addCase(createTransaction.rejected, (state, action) => {
         state.isError = true;

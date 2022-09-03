@@ -47,7 +47,7 @@ export const removeTransaction = createAsyncThunk(
 
 // create slice
 const transactionsSlice = createSlice({
-  naem: "tranactions",
+  name: "tranactions",
   initialState,
   extraReducers: (builder) => {
     builder

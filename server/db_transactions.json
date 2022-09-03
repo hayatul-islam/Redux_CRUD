@@ -1,16 +1,40 @@
 {
-    "transactions": [
-        {
-            "id": 1,
-            "name": "Salary from Google",
-            "type": "income",
-            "amount": 1000000
-        },
-        {
-            "id": 2,
-            "name": "Family Expenses",
-            "type": "expense",
-            "amount": 200000
-        }
-    ]
+  "transactions": [
+    {
+      "id": 1,
+      "name": "Salary from Google",
+      "type": "income",
+      "amount": 1000000
+    },
+    {
+      "id": 2,
+      "name": "Family Expenses",
+      "type": "expense",
+      "amount": 200000
+    },
+    {
+      "name": "MD. HAYATUL ISLAM",
+      "type": "income",
+      "amount": "66666",
+      "id": 3
+    },
+    {
+      "name": "Hayatul Emon",
+      "type": "expense",
+      "amount": "4444",
+      "id": 4
+    },
+    {
+      "name": "Hayatul Emon",
+      "type": "expense",
+      "amount": "4444",
+      "id": 5
+    },
+    {
+      "name": "fff",
+      "type": "income",
+      "amount": 444,
+      "id": 6
+    }
+  ]
 }

@@ -10,8 +10,10 @@ export default function Transactions() {
   );
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchTransactions());
+    dispatch(fetchTransactions({ type: "", search: "" }));
   }, [dispatch]);
+
+  console.log(transactions);
 
   // decite what to render
   let content = null;

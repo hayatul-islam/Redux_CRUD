@@ -17,8 +17,8 @@ const initialState = {
 
 export const fetchTransactions = createAsyncThunk(
   "transactions/fetchTransactions",
-  async (type) => {
-    const transactions = await getTransactions(type);
+  async ({ type, search }) => {
+    const transactions = await getTransactions(type, search);
 
     return transactions;
   }

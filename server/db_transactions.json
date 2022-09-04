@@ -29,6 +29,18 @@
       "type": "income",
       "amount": 3000,
       "id": 7
+    },
+    {
+      "name": "Hayatul Emon",
+      "type": "income",
+      "amount": 555,
+      "id": 8
+    },
+    {
+      "name": "Hayatul Emon",
+      "type": "expense",
+      "amount": 400,
+      "id": 9
     }
   ]
 }

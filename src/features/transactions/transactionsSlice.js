@@ -12,13 +12,14 @@ const initialState = {
   isError: false,
   error: "",
   editing: {},
-  type: "",
+  totalCount: 0,
+  page: 1,
 };
 
 export const fetchTransactions = createAsyncThunk(
   "transactions/fetchTransactions",
-  async ({ type, search }) => {
-    const transactions = await getTransactions(type, search);
+  async ({ type, search, page }) => {
+    const transactions = await getTransactions(type, search, page);
 
     return transactions;
   }
@@ -59,8 +60,8 @@ const transactionsSlice = createSlice({
     editInactive: (state, action) => {
       state.editing = {};
     },
-    filterType: (state, action) => {
-      state.type = action.payload;
+    pagination: (state, action) => {
+      state.page = action.payload;
     },
   },
   extraReducers: (builder) => {
@@ -72,10 +73,8 @@ const transactionsSlice = createSlice({
       .addCase(fetchTransactions.fulfilled, (state, action) => {
         state.isError = false;
         state.isLoading = false;
-
-        state.transactions = action.payload.sort(function (a, b) {
-          return b.id - a.id;
-        });
+        state.transactions = action.payload.data;
+        state.totalCount = action.payload.totalCount;
       })
       .addCase(fetchTransactions.rejected, (state, action) => {
         state.isError = true;
@@ -141,5 +140,5 @@ const transactionsSlice = createSlice({
 });
 
 export default transactionsSlice.reducer;
-export const { editActive, editInactive, filterType } =
+export const { editActive, editInactive, pagination } =
   transactionsSlice.actions;

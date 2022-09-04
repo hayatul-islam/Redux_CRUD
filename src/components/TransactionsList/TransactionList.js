@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchTransactions } from "../../features/transactions/transactionsSlice";
+import Pagination from "../Pagination";
 import Transaction from "../Transactions/Transaction";
 
 export default function TransactionList() {
-  const { transactions } = useSelector((state) => state.transactions);
+  const { transactions, page } = useSelector((state) => state.transactions);
   const dispatch = useDispatch();
   const [type, setType] = useState("");
   const [input, setInput] = useState("");
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    dispatch(fetchTransactions({ type, search }));
-  }, [dispatch, type, search]);
+    dispatch(fetchTransactions({ type, search, page }));
+  }, [dispatch, type, search, page]);
 
   const handeSearch = () => {
     setSearch(input);
@@ -83,6 +84,7 @@ export default function TransactionList() {
       {transactions.map((transaction) => (
         <Transaction key={transaction.id} transaction={transaction} />
       ))}
+      <Pagination />
     </div>
   );
 }

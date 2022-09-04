@@ -19,12 +19,6 @@
       "id": 9
     },
     {
-      "name": "facebook",
-      "type": "income",
-      "amount": 4000,
-      "id": 10
-    },
-    {
       "name": "google",
       "type": "income",
       "amount": 4000,
@@ -32,8 +26,8 @@
     },
     {
       "name": "exp",
+      "amount": "4000",
       "type": "expense",
-      "amount": 400,
       "id": 12
     },
     {
@@ -43,15 +37,15 @@
       "id": 14
     },
     {
-      "name": "last",
-      "amount": "10000",
+      "name": "last salary",
+      "amount": "1000",
       "type": "income",
       "id": 15
     },
     {
       "name": "extra money",
-      "amount": 400,
-      "type": "expense",
+      "amount": "4000",
+      "type": "income",
       "id": 16
     },
     {
@@ -62,7 +56,7 @@
     },
     {
       "name": "Payoneer",
-      "amount": 200,
+      "amount": "20000",
       "type": "expense",
       "id": 18
     },
@@ -77,6 +71,24 @@
       "type": "income",
       "amount": 4000,
       "id": 20
+    },
+    {
+      "name": "facebook",
+      "type": "income",
+      "amount": 3000,
+      "id": 21
+    },
+    {
+      "name": "google",
+      "type": "expense",
+      "amount": 400,
+      "id": 22
+    },
+    {
+      "name": "extra exp",
+      "type": "expense",
+      "amount": 500,
+      "id": 23
     }
   ]
 }

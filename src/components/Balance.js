@@ -8,9 +8,9 @@ export default function Balance() {
     transactions.forEach((transaction) => {
       const { type, amount } = transaction;
       if (type === "income") {
-        income += amount;
+        income += parseFloat(amount);
       } else {
-        income -= amount;
+        income -= parseFloat(amount);
       }
     });
 

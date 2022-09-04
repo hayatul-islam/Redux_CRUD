@@ -68,9 +68,15 @@
     },
     {
       "name": "mulu",
+      "amount": "4000",
       "type": "income",
-      "amount": 400,
       "id": 19
+    },
+    {
+      "name": "google",
+      "type": "income",
+      "amount": 4000,
+      "id": 20
     }
   ]
 }

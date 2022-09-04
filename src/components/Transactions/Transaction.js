@@ -1,4 +1,5 @@
 import { useDispatch } from "react-redux";
+import { useMatch, useNavigate } from "react-router-dom";
 import deleteImage from "../../assets/images/delete.svg";
 import editImage from "../../assets/images/edit.svg";
 import {
@@ -10,8 +11,14 @@ export default function Transaction({ transaction }) {
   const dispatch = useDispatch();
   const { name, type, amount, id } = transaction || {};
 
+  const match = useMatch("/");
+  const navigate = useNavigate();
+
   const handleEdit = () => {
     dispatch(editActive(transaction));
+    if (!match) {
+      navigate("/");
+    }
   };
   const handleDelete = () => {
     dispatch(removeTransaction(id));

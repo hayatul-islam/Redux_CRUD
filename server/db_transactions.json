@@ -7,9 +7,9 @@
       "id": 2
     },
     {
-      "name": "rr",
+      "name": "rruuuu",
+      "amount": "4000",
       "type": "income",
-      "amount": 400,
       "id": 3
     },
     {
@@ -32,8 +32,8 @@
     },
     {
       "name": "Hayatul Emon",
+      "amount": "5550",
       "type": "income",
-      "amount": 555,
       "id": 8
     },
     {

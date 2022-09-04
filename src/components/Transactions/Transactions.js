@@ -13,7 +13,7 @@ export default function Transactions() {
     dispatch(fetchTransactions({ type: "", search: "" }));
   }, [dispatch]);
 
-  console.log(transactions);
+  // console.log(transactions);
 
   // decite what to render
   let content = null;

@@ -89,6 +89,60 @@
       "type": "expense",
       "amount": 500,
       "id": 23
+    },
+    {
+      "name": "extra income",
+      "type": "income",
+      "amount": 5000,
+      "id": 24
+    },
+    {
+      "name": "extra money",
+      "type": "income",
+      "amount": 3000,
+      "id": 25
+    },
+    {
+      "name": "income",
+      "type": "income",
+      "amount": 6000,
+      "id": 26
+    },
+    {
+      "name": "extra expance",
+      "type": "expense",
+      "amount": 3000,
+      "id": 27
+    },
+    {
+      "name": "upori income",
+      "type": "income",
+      "amount": 3000,
+      "id": 28
+    },
+    {
+      "name": "extra",
+      "type": "expense",
+      "amount": 400,
+      "id": 29
+    },
+    {
+      "name": "google exp",
+      "type": "expense",
+      "amount": 500,
+      "id": 30
+    },
+    {
+      "name": "monthly income",
+      "type": "income",
+      "amount": 10000,
+      "id": 31
+    },
+    {
+      "name": "montthly exp",
+      "type": "expense",
+      "amount": 3000,
+      "id": 32
     }
   ]
 }

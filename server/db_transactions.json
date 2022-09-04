@@ -1,46 +1,46 @@
 {
   "transactions": [
     {
-      "name": "fff",
+      "name": "junuary",
+      "amount": "2000",
       "type": "expense",
-      "amount": 200,
       "id": 2
     },
     {
-      "name": "rruuuu",
-      "amount": "4000",
-      "type": "income",
-      "id": 3
-    },
-    {
-      "name": "www",
-      "type": "expense",
-      "amount": 500,
-      "id": 5
-    },
-    {
-      "name": "1000",
-      "type": "income",
+      "name": "income",
       "amount": 1000,
+      "type": "income",
       "id": 6
     },
     {
-      "name": "fff",
-      "type": "income",
-      "amount": 3000,
-      "id": 7
+      "name": "july",
+      "amount": 400,
+      "type": "expense",
+      "id": 9
     },
     {
-      "name": "Hayatul Emon",
-      "amount": "5550",
+      "name": "facebook",
       "type": "income",
-      "id": 8
+      "amount": 4000,
+      "id": 10
     },
     {
-      "name": "Hayatul Emon",
+      "name": "google",
+      "type": "income",
+      "amount": 4000,
+      "id": 11
+    },
+    {
+      "name": "exp",
       "type": "expense",
       "amount": 400,
-      "id": 9
+      "id": 12
+    },
+    {
+      "name": "salary",
+      "type": "income",
+      "amount": 100000,
+      "id": 13
     }
   ]
 }

@@ -20,15 +20,31 @@ export default function TransactionList() {
 
   return (
     <div>
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <div className="form-group radio">
+      <div
+        style={{ display: "flex", alignItems: "center", paddingBottom: "20px" }}
+      >
+        <div
+          style={{ display: "flex", gap: "10px", marginRight: "20px" }}
+          className="radio"
+        >
+          <div className="radio_group">
+            <input
+              required
+              type="radio"
+              value="all"
+              name="type"
+              checked={type === ""}
+              onChange={(e) => setType("")}
+            />
+            <label>All</label>
+          </div>
           <div className="radio_group">
             <input
               required
               type="radio"
               value="income"
               name="type"
-              //   checked={type === "income"}
+              checked={type === "income"}
               onChange={(e) => setType("income")}
             />
             <label>Income</label>
@@ -39,8 +55,6 @@ export default function TransactionList() {
               type="radio"
               value="expense"
               name="type"
-              //   checked={type === "expense"}
-              placeholder="Expense"
               onChange={(e) => setType("expense")}
             />
             <label>Expense</label>

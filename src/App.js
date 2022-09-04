@@ -1,16 +1,19 @@
-import Balance from "./components/Balance";
-import Form from "./components/Form";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
 import Layout from "./components/Layout";
-import Transactions from "./components/Transactions/Transactions";
+import TransactionList from "./components/TransactionsList/TransactionList";
 
 function App() {
-    return (
-        <Layout>
-            <Balance />
-            <Form />
-            <Transactions />
-        </Layout>
-    );
+  return (
+    <Layout>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/transactionList" element={<TransactionList />} />
+        </Routes>
+      </BrowserRouter>
+    </Layout>
+  );
 }
 
 export default App;

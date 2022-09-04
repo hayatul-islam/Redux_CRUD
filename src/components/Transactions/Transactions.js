@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { fetchTransactions } from "../../features/transactions/transactionsSlice";
 import Transaction from "./Transaction";
 
@@ -27,6 +28,11 @@ export default function Transactions() {
     content = <p>No Transactions found!</p>;
   }
 
+  const navigate = useNavigate();
+  const handleViewAll = () => {
+    navigate("/transactionList");
+  };
+
   return (
     <>
       <p className="second_heading">Your Transactions:</p>
@@ -35,8 +41,10 @@ export default function Transactions() {
         <ul>{content}</ul>
       </div>
       {transactions?.length > 5 && (
-        <div style={{ paddingTop: "10px" }}>
-          <button className="btn view_all_btn">View all</button>
+        <div style={{ paddingTop: "10px", textAlign: "end" }}>
+          <button onClick={handleViewAll} className="btn view_all_btn">
+            View all
+          </button>
         </div>
       )}
     </>

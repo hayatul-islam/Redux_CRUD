@@ -12,12 +12,13 @@ const initialState = {
   isError: false,
   error: "",
   editing: {},
+  type: "",
 };
 
 export const fetchTransactions = createAsyncThunk(
   "transactions/fetchTransactions",
-  async () => {
-    const transactions = await getTransactions();
+  async (type) => {
+    const transactions = await getTransactions(type);
 
     return transactions;
   }
@@ -57,6 +58,9 @@ const transactionsSlice = createSlice({
     },
     editInactive: (state, action) => {
       state.editing = {};
+    },
+    filterType: (state, action) => {
+      state.type = action.payload;
     },
   },
   extraReducers: (builder) => {
@@ -137,4 +141,5 @@ const transactionsSlice = createSlice({
 });
 
 export default transactionsSlice.reducer;
-export const { editActive, editInactive } = transactionsSlice.actions;
+export const { editActive, editInactive, filterType } =
+  transactionsSlice.actions;

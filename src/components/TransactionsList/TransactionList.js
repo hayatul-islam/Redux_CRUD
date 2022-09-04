@@ -6,9 +6,8 @@ import Transaction from "../Transactions/Transaction";
 import Header from "./Header";
 
 export default function TransactionList() {
-  const { transactions, page, type, search, totalCount } = useSelector(
-    (state) => state.transactions
-  );
+  const { transactions, page, type, search, totalCount, isLoading } =
+    useSelector((state) => state.transactions);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -17,13 +16,14 @@ export default function TransactionList() {
 
   let content = null;
   if (totalCount === 0) content = <p>No Transactions found!</p>;
+  if (isLoading) content = <p> Loading...</p>;
   if (totalCount > 0) {
     content = transactions.map((transaction) => (
       <Transaction key={transaction.id} transaction={transaction} />
     ));
   }
 
-  console.log(totalCount);
+  // console.log(totalCount);
 
   return (
     <div>

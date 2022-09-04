@@ -23,6 +23,8 @@ export default function TransactionList() {
     ));
   }
 
+  console.log(totalCount);
+
   return (
     <div>
       <Header />

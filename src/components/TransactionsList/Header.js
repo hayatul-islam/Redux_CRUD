@@ -14,6 +14,11 @@ export default function Header() {
     dispatch(searched(input));
   };
 
+  const handeSubmit = (e) => {
+    e.preventDefault();
+    dispatch(searched(input));
+  };
+
   useEffect(() => {
     dispatch(filterType(type));
   }, [dispatch, type]);
@@ -60,22 +65,24 @@ export default function Header() {
         </div>
       </div>
       <div>
-        <input
-          type="text"
-          placeholder="Search for..."
-          onChange={(e) => setInput(e.target.value)}
-        />
-        <input
-          onClick={handeSearch}
-          style={{
-            background: "green",
-            color: "white",
-            border: "2px solid green",
-            cursor: "pointer",
-          }}
-          type="button"
-          value="Search"
-        />
+        <form onSubmit={handeSubmit}>
+          <input
+            type="text"
+            placeholder="Search for..."
+            onChange={(e) => setInput(e.target.value)}
+          />
+          <input
+            onClick={handeSearch}
+            style={{
+              background: "green",
+              color: "white",
+              border: "2px solid green",
+              cursor: "pointer",
+            }}
+            type="button"
+            value="Search"
+          />
+        </form>
       </div>
     </div>
   );

@@ -14,6 +14,8 @@ const initialState = {
   editing: {},
   totalCount: 0,
   page: 1,
+  type: "",
+  search: "",
 };
 
 export const fetchTransactions = createAsyncThunk(
@@ -62,6 +64,12 @@ const transactionsSlice = createSlice({
     },
     pagination: (state, action) => {
       state.page = action.payload;
+    },
+    filterType: (state, action) => {
+      state.type = action.payload;
+    },
+    searched: (state, action) => {
+      state.search = action.payload;
     },
   },
   extraReducers: (builder) => {
@@ -140,5 +148,5 @@ const transactionsSlice = createSlice({
 });
 
 export default transactionsSlice.reducer;
-export const { editActive, editInactive, pagination } =
+export const { editActive, editInactive, pagination, filterType, searched } =
   transactionsSlice.actions;

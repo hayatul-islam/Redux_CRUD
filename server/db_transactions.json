@@ -37,12 +37,6 @@
       "id": 12
     },
     {
-      "name": "salary",
-      "type": "income",
-      "amount": 100000,
-      "id": 13
-    },
-    {
       "name": "last",
       "type": "expense",
       "amount": 100,
@@ -50,8 +44,8 @@
     },
     {
       "name": "last",
+      "amount": "10000",
       "type": "income",
-      "amount": 1000,
       "id": 15
     },
     {
